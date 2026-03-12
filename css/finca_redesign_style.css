@@ -31,7 +31,6 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 0;
     width: 100%;
     background-color: var(--cream);
     
@@ -87,7 +86,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 40px 20px 10px;
+    padding: 10px 20px 20px;
     box-sizing: border-box;
 
 
@@ -144,6 +143,9 @@ header{
                         width: auto;
                         height: 18px;
                     }
+                }
+                & a:hover{
+                    color: var(--deeporange);
                 }
             }
         }
@@ -206,11 +208,11 @@ header{
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     z-index: 999;
     &>.gnb_list{
+        padding: 6px 0;
         display: flex;
         justify-content: left;
         align-items: center;
         position: relative;
-        padding: 10px 0;
         box-sizing: border-box;
         
         &>li{
@@ -223,6 +225,9 @@ header{
             .incline{
                 font-style: italic;
                 font-weight: 300;
+            }
+            .incline:hover{
+                color: var(--deeporange);
             }
             & > a{
                 font-size: 14px;
@@ -871,6 +876,9 @@ overflow:hidden;
                 margin-right: 5px;
             }
         }
+        & > a:hover{
+            color: var(--gray100); 
+        }
     }
 }
 @keyframes fadeIn{
@@ -1060,10 +1068,42 @@ footer{
         display: flex;
         gap: 7px;
         width: 145px;
-        & > div{
+        & > a{
             width: 30px; height: 30px;
-            background-color: #000;
             border-radius: 50%;
+            
+        }
+        & > .imgs_insta{
+            background: url(./../img/icon/icon_insta.png) no-repeat center;
+            background-size: cover;
+        }
+        & > .imgs_youtube{
+            background: url(./../img/icon/icon_youtube.png) no-repeat center;
+            background-size: cover;
+        }
+        & > .imgs_ios{
+            background: url(./../img/icon/icon_apple.png) no-repeat center;
+            background-size: cover;
+        }
+        & > .imgs_androide{
+            background: url(./../img/icon/icon_android.png) no-repeat center;
+            background-size: cover;
+        }
+        & > .imgs_insta:hover{
+            background: url(./../img/icon/icon_insta_hover.png) no-repeat center;
+        background-size: cover;
+        }
+        & > .imgs_youtube:hover{
+            background: url(./../img/icon/icon_youtube_hover.png) no-repeat center;
+            background-size: cover;
+        }
+        & > .imgs_ios:hover{
+            background: url(./../img/icon/icon_apple_\ hover.png) no-repeat center;
+            background-size: cover;
+        }
+        & > .imgs_androide:hover{
+            background: url(./../img/icon/icon_android_hover.png) no-repeat center;
+            background-size: cover;
         }
     }
 }
@@ -1107,6 +1147,9 @@ footer{
     overflow: hidden;
     display:block;
     padding: 2px 0;
+}
+.f_m_light:hover{
+    color: #000;
 }
 .f_bottom{
     padding-top: 10px;
@@ -1305,6 +1348,10 @@ footer{
             transition: 0.4s;
             & > li{
                 padding: 15px 0;
+                
+                .incline:hover {
+                    color: #000;
+                }
             }
             & .gnb_sub-item {
                 position: static;
@@ -1441,6 +1488,11 @@ footer{
         & > .image{
             gap: 12px;
         }
+        & > .recommend_btn{
+        & > a:hover{
+            color: #000; 
+        }
+    }
     }
     .promo_sec{
         gap: 12px;
