@@ -64,10 +64,12 @@ header{
             & > .top_search{
                 order:1;
                 & > .search_line{
-                    height: 20px;
+                    height: 30px;
                     margin-right: 5px;
+                    box-sizing: border-box;
                 }
                 &>.search_web{
+                    margin-top: 6px;
                     width: 20px;
                     height: 20px;
                     
@@ -141,7 +143,7 @@ header{
                     &>img {
                         padding: 0 5px;
                         width: auto;
-                        height: 18px;
+                        height: 20px;
                     }
                 }
                 & a:hover{
@@ -221,6 +223,9 @@ header{
             margin-left: 24px;
             .orange{
                 color: var(--deeporange);
+            }
+            .orange:hover{
+                color: var(--bluenavy);
             }
             .incline{
                 font-style: italic;
@@ -749,7 +754,7 @@ overflow:hidden;
             transition: transform 0.5s ease;
             & > .best_page{
                 width: 100%;
-                padding-top: 20px;
+                padding-top: 10px;
                 box-sizing: border-box;
                 display: grid;
                 gap: 20px;
@@ -1348,6 +1353,9 @@ footer{
             transition: 0.4s;
             & > li{
                 padding: 15px 0;
+                .orange:hover{
+                color: var(--deeporange);
+            }
                 
                 .incline:hover {
                     color: #000;
